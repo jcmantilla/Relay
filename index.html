@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="UTF-8">
+		<title>Relay</title>
+	</head>
+
+	<body>
+
+		<h2 align=center>Relay Test</h2>
+
+		<!--<h3 id="temp_display">Waiting for temperature update...</h3>
+		<h3 id="humidity_display">Waiting for humidity update...</h3>
+		<h3 id="led_status">Waiting for LED status update...</h3> -->
+
+		<button id="buttonOn" type="button" onclick="relay_on();">Relay On</button> 	
+		<button id="buttonOff" type="button" onclick="relay_off();">Relay Off</button> 	
+
+		<!-- Source Paho MQTT Client-->
+		<script src="lib/mqttws31.js"></script>
+		<!-- Our Code Goes Here -->
+		<script src="button_test.js"></script>
+		<!-- Start it up! -->
+		<script>connect();</script>
+
+	</body>
+</html>
